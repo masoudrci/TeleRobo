@@ -40,7 +40,7 @@ enum View {
 
 WebApp.setHeaderColor('#1a1a1a');
 
-const BRIDGE_URL = import.meta.env.VITE_BRIDGE_URL || '';
+const BRIDGE_URL = import.meta.env.VITE_BRIDGE_URL=<localhost:8080></localhost:8080> || '';
 
 function App() {
     const [view, setView] = useState<View>(View.LANDING);

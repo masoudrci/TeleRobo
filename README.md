@@ -1,136 +1,70 @@
-# Telegram Mini Apps Demo
+# Getting Started with Create React App
 
-Welcome to our guide on developing Telegram Mini Apps! Telegram Mini Apps offer a seamless way to enhance user interaction within the Telegram ecosystem, allowing businesses, developers, and creators to integrate custom web applications directly into Telegram chats. These lightweight, highly interactive web apps can be accessed through special menu buttons or inline buttons in messages, providing users with a rich and immersive experience without ever leaving the chat interface. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Reach out if you need custom telegram mini app development or support. 
-<p align="left">
+## Available Scripts
 
-  <a href="https://t.me/yannikheinze" alt="Telegram" target="_blank">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=WhatsApp&logoColor=%231c1914" />
-  </a>
+In the project directory, you can run:
 
-  <a href="mailto:hello@softstack.io" alt="mail" target="_blank">
-    <img src="https://img.shields.io/badge/-Mail-f5f1ea?style=for-the-badge&logo=gmail&logoColor=%231c1914" />
-  </a>
+### `npm start`
 
-  <a href="https://www.linkedin.com/company/softstack" alt="LinkedIn" target="_blank">
-    <img src="https://img.shields.io/badge/-LinkedIn-f5f1ea?style=for-the-badge&logo=Linkedin&logoColor=%231c1914" />
-  </a>
-  
-  <a href="https://softstack.io" alt="Website" target="_blank">
-    <img src="https://img.shields.io/badge/-Website-f5f1ea?style=for-the-badge&logo=nextdotjs&logoColor=%231c1914" />
-  </a>
-</p>
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Why Telegram Mini Apps?
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Telegram Mini Apps are an innovative way to engage with your audience, offering various benefits:
+### `npm test`
 
-- **Seamless Integration**: Directly integrate your services into Telegram, one of the most popular messaging platforms with millions of active users.
-- **Enhanced User Experience**: Provide users with interactive and sophisticated web apps without the need for separate downloads or installations.
-- **Versatility**: From e-commerce and customer support to games and quizzes, the possibilities are endless.
-- **Rapid Development**: With the support for web technologies, developers can quickly create and deploy Mini Apps.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Getting Started
+### `npm run build`
 
-This repository serves as a starter guide for anyone looking to develop Telegram Mini Apps. Whether you're a seasoned developer or just starting out, our resources will help you understand the essentials and best practices for creating engaging Mini Apps within Telegram.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Links
-* Official docs: [https://core.telegram.org/bots/webapps](https://core.telegram.org/bots/webapps)
-* Telegram Promo Bot: [Durger King](https://t.me/durgerkingbot)
-  
-## Quick setup
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-#### 0. Host the Web App in GitHub Pages
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-The Web App must be hosted somewhere. Hosting it on a GitHub repository is a quick, free way to do it:
+### `npm run eject`
 
-1. Create a repository (or fork this one)
-2. On the repository: Settings > Pages:
-    - Source: Deploy from a branch
-    - Branch: master, / (root), Save
-3. Wait a few minutes for the web to be deployed. It will be available at: `https://{github-username}.github.io/{repository-name}/{location-inside-repository}`
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-#### 1. Show the user a button to open a Web App. There are two ways:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-1. Show the user a special menu button (near the message input field):
-    1. Go to [Bot Father](https://t.me/BotFather)
-    2. Select your bot
-    3. `Bot Settings` — `Menu Button` — `Specify..`/`Edit menu button URL`
-    4. Send a URL to your Web App (in this case, `https://{github-username}.github.io/{repository-name}/index.html`)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-2. The second way is to send a button with the data that contains field `web_app` with a URL to a Web App:
-    ```json
-    {
-        "text": "Test web_app",
-        "web_app": {
-            "url": "https://{github-username}.github.io/{repository-name}/index.html"
-        }
-    }
-    ```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-#### 2. Add script to your Web App
+## Learn More
 
-To connect a Web App to the Telegram client, place the script `telegram-web-app.js` in the `<head>` tag before any other scripts, using this code ([more info](https://core.telegram.org/bots/webapps#initializing-web-apps)):
-```html
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Once the script is connected, a `window.Telegram.WebApp` object will become available.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-# React + TypeScript + Vite
+### Code Splitting
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Currently, two official plugins are available:
+### Analyzing the Bundle Size
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## Expanding the ESLint configuration
+### Making a Progressive Web App
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-- Configure the top-level `parserOptions` property like this:
+### Advanced Configuration
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Deployment
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### Support and Custom Development
+### `npm run build` fails to minify
 
-Need custom development or have questions about Telegram Mini Apps? Softstack is here to help. Reach out to us for bespoke development services, consultation, or any inquiries related to Telegram Mini Apps and the TON ecosystem. Our team is committed to providing the support and expertise you need to succeed.
-
-Let's build something great together.
-
-<p align="left">
-
-  <a href="https://t.me/yannikheinze" alt="Telegram" target="_blank">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=WhatsApp&logoColor=%231c1914" />
-  </a>
-
-  <a href="mailto:hello@softstack.io" alt="mail" target="_blank">
-    <img src="https://img.shields.io/badge/-Mail-f5f1ea?style=for-the-badge&logo=gmail&logoColor=%231c1914" />
-  </a>
-
-  <a href="https://www.linkedin.com/company/softstack" alt="LinkedIn" target="_blank">
-    <img src="https://img.shields.io/badge/-LinkedIn-f5f1ea?style=for-the-badge&logo=Linkedin&logoColor=%231c1914" />
-  </a>
-  
-  <a href="https://softstack.io" alt="Website" target="_blank">
-    <img src="https://img.shields.io/badge/-Website-f5f1ea?style=for-the-badge&logo=nextdotjs&logoColor=%231c1914" />
-  </a>
-</p>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
